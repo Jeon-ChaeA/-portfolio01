@@ -1,0 +1,240 @@
+:root{
+  /* color */
+  --PrimaryColor1: #E72410; /* 한국우편사업진흥원 메인컬러 */
+  --PrimaryColor2: #B60217;
+  --PrimaryColor3: #9C1C0F;
+  --PrimaryColor4: #FFABA1;
+  --PrimaryColor5: #FFE6AB;
+  --PrimaryColor6: #FAF0D2;
+  --PrimaryColor7: #FFFBD6;
+  --WhiteColor: #FFFFFF;
+  --BlackColor: #000000;
+}
+
+@media (max-width : 768px){
+/* header */
+header{
+  background-color: var(--WhiteColor);
+  width: 100%; height: 116px;
+  position: sticky;
+  top: 0;
+}
+.header_inner{
+  width: 100%;
+  padding: 0 20px;
+}
+.header_logo img{
+  width: 93px; height: 93px;
+  content: url('../image/main/01_header/header_logo_모바일-01.png');
+}
+.header_icon_button{display: none;}
+header .hearder_icon{
+  display: block;
+  position: absolute;
+  right: 20px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 44px;
+  color: #777777;
+  z-index: 1001;
+}
+
+/* nav */
+nav {display: none;}
+/* Accordion Menu */
+.hearder_icon {cursor: pointer;}
+.accordion{
+  background-color: var(--WhiteColor);
+  padding: 10px;
+  position: absolute;
+  z-index: 100000;
+  width: 100%; height: 100%;
+}  
+.accordion-item{border-bottom: 3px solid #dddddd;}
+.main .accordion-item:first-child{margin-top: 110px;}
+.accordion-title{
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: var(--WhiteColor);
+}
+.accordion-title img{width: 68px; height: 68px;}
+.accordion-title h3{
+  font-size: 36px;
+  color: #555555;
+  margin-left: 25px;
+}
+.accordion_icon {margin-left: auto;}
+.accordion_icon i{font-size: 30px; color: #777777;}
+.accordion-content{
+  display: none;
+  padding-left: 104px;
+  background-color: #FDF9EE;
+  padding-bottom: 20px;
+  }
+  .accordion-content h4{
+    font-size: 26px;
+    color: #777777;
+    padding: 10px;
+  }
+  .accordion-content>div>a{
+    display: block;
+    color: #777777;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .accordion-title.active{
+    background-color: #FFE7AB;
+    color: var(--PrimaryColor3);
+}
+.accordion-title.active h3{
+  color: var(--PrimaryColor3); 
+  font-weight: 800;
+  }
+  .accordion-title.active .accordion_icon i{color: #ffffff;}
+
+  /* index(notice) */
+  /* notice_visual */
+  .notice_visual_bg img, .notice_visual_bg::before{top: 15vw;}
+  .notice_visual_wrap{top: 15.1vw; width: 95%;}
+  .notice_visual_mainText{margin-top: 3.9vw;}
+  .notice_location{top: 5.9vw;}
+  .notice_visual_social{bottom: 2.2vw;}
+  
+  /* notice_pagination 검색바 */
+  .notice_paination_inner{width: 95%; height: 1900px;}
+  .notice_entire{display: block;}
+  .entire_left{
+    float: right;
+    margin-top: -9.8vw;
+  }
+  .entire_right{
+    display: flex;
+    justify-content: center;}
+  .entire_right select{width: 13.02vw; height: 70px; margin-right:   3.5vw;}
+  .entire_right input{width: 45.2vw; height: 70px; margin-right: 3.  5vw;}
+  .entire_right button{width: 18.23vw; height: 70px;}
+  thead tr th{display: none;}
+  
+  /* notice_pagination */
+  tbody tr:nth-child(even){background-color: #FDF9EE;}
+  tbody tr td{border-bottom: none;}
+  tbody tr{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: calc(92.45vw);
+  }
+  tbody td{
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  tbody tr td:first-child {
+    position: absolute;
+    left: 0%; top: 50%; 
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: var(--PrimaryColor3);
+    font-weight: bold;
+  }
+  tbody tr td:nth-child(2){
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-left: 4.4rem;
+  }
+  tbody tr td:nth-child(3){width: 24.5%; margin-left: 4.4rem;}
+  tbody tr td:nth-child(3),
+  tbody tr td:nth-child(4),
+  tbody tr td:nth-child(5){
+    font-size: 1.25rem;
+    padding-top: 0; padding-right: 0;
+  }
+  tbody tr td:nth-child(4),
+  tbody tr td:nth-child(5){text-align: center; width: 30%;}
+  tbody tr td:nth-child(4)::before,
+  tbody tr td:nth-child(5)::before{
+    content: '|';
+    margin-right: calc(9.1vw);
+  }
+  tbody tr td:nth-child(6){display: none;}
+  #numbers li a, .pagination i{font-size: 1.9rem;}
+  #numbers li a{margin-right: 3.1rem;}
+  #numbers li a.active{width: 1.9vw; height: 5.7vh;;}
+  .pagination i{margin-top: 0.6rem;}
+  
+  /* notice_satisfaction  */
+  .pagination{padding: 4rem;}
+  .notice_satisfaction_wrap{
+    width: 85%;
+    position: absolute;
+    top: 1762px;
+  }
+  .notice_satisfaction_wrap>.notice_satisfaction_inner{width: 95%;}
+  .notice_satisfaction_text{
+    width: 110%;
+    position: absolute;
+    z-index: -10;
+  }
+  .notice_sat_top{width: 97.5%;}
+  .notice_satisfaction_text p{margin-bottom: 0.3rem;}
+  .notice_satisfaction_text label{padding-right: 0.7rem;}
+  .notice_sat_bottom{width: 95%; margin: 1.12rem auto;}
+  
+  /* footer */
+  footer{
+    height: 328px;
+    position: absolute;
+    top: 562px;
+  }
+  .footer_logo img{
+    width: 347px; height: 113px;
+    position: absolute;
+    top: 20px; left: 30px;
+  }
+  .footer_text{
+    position: absolute;
+    margin-left: 118px;
+    font-size: 20px; 
+    font-weight: 700
+  }
+  .info_text{
+    margin-top: 248px;
+    margin-left: -101px;
+    font-size: 21px;
+    font-weight: 500;
+  }
+  .footer_text p{display: none;}
+  .footer_info a::before {
+    content: '|';
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .moble_info_suvtext{
+    display: block;
+    margin-left: 34px;
+    margin-top: 73px;
+    width: 500px; height: 100px;
+    color: var(--WhiteColor); 
+  }
+  .info_suv_01{font-size: 18px;}
+  .info_suv_02{font-size: 15px; margin-top: 15px;}
+  .footer_certificate{
+    width: 160px; height: 54px;
+    margin-right: 556px; margin-left: 36px;
+  }
+  .footer_certificate01 img{width: 54px; height: 54px;}
+  .footer_certificate02 img{
+    width: 75.94px; height: 54px;
+    margin-left: 10px;
+  }
+  .footer_site{
+    position: absolute;
+    top: 64px; left: 589px;
+  }
+  .family_site{
+    width: 140px; height: 35px;
+    font-size: 14px;
+  }
+}
