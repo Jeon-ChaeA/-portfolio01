@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한국우편사업진흥원</title>
+  <!-- CSS 연결 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style(fullMenu).css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- favicon -->
+  <link rel="icon" href="image/00_icon&favicon/00_Favicon/favicon.ico"> 
+</head>
+<body>
+  <!-- hearder -->
+  <header>
+        <div class="header_inner">
+          <div class="header_logo">
+            <a href="index.html"><img src="image/main/01_header/header_logo-02.png" alt="logo"></a>
+          </div>
+          <div class="header_icon_button">
+            <ul>
+              <li>
+                <a href="javascript:void(0);" id="searchIcon" onclick="toggleSearch()">
+                  <img id="icon" src="image/main/01_header/Icon_reading glasses.png" alt="돋보기">
+                </a>
+                <div class="search-bar" id="searchBar">
+                  <input type="text" placeholder="검색어를 입력하세요" class="search-input">
+                  <button class="search-button">
+                    <img src="image/main/01_header/Icon_reading glasses(w).png" alt="검색 아이콘">
+                  </button>
+                </div>
+              </li>
+              <li><a href="#none">사전정보공표</a></li>
+              <li></li>
+              <div class="dropdown">
+                <button class="dropbtn"> 
+                  분야별 업무 사이트
+                </button>
+                <div class="dropdown-content">
+                  <a href="#none"><img src="image/main/01_header/header_dropImg-01.png" alt="dropImg"> 인터넷우체국</a>
+                  <a href="#none"><img src="image/main/01_header/header_dropImg-02.png" alt="dropImg"> 우체국쇼핑</a>
+                  <a href="#none"><img src="image/main/01_header/header_dropImg-03.png" alt="dropImg"> 우표박물관</a>
+                  <a href="#none"><img src="image/main/01_header/header_dropImg-04.png" alt="dropImg"> 한국우표포털사이트</a>
+                  <a href="#none"><img src="image/main/01_header/header_dropImg-01.png" alt="dropImg"> 우체국과 사람들</a>
+                  <a href="#none"><img src="image/main/01_header/header_dropImg-01.png" alt="dropImg"> 우정사업본부</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+  </header>
+  <!-- nav -->
+  <nav class="main-menu">
+      <div class="nav-inner">
+        <ul class="nav_effect">
+          <li class="menu-item" data-target="menu01"><a href="#none">알림마당</a></li>
+          <li class="menu-item" data-target="menu02"><a href="#none">참여혁신</a></li>
+          <li class="menu-item" data-target="menu03"><a href="#none">사업소개</a></li>
+          <li class="menu-item" data-target="menu04"><a href="#none">ESG경영</a></li>
+          <li class="menu-item" data-target="menu05"><a href="#none">기관소개</a></li>
+          <div class="nav-icon" id="closeFullMenu">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </ul>
+      </div>
+  </nav>
+  <!-- nav 서브메뉴 -->
+  <div class="sub-warp">
+      <!-- 서브메뉴01 -->
+      <div class="sub-menu" id="menu01">
+        <div class="suvmenu-content">
+          <div>
+            <h3>알림마당</h3>
+          </div>
+          <div class="menu">
+            <div>
+              <h4><a href="index(notice).html">공지사항</a></h4>
+              <h4><a href="#none">입찰정보</a></h4>
+              <h4><a href="#none">인재채용</a></h4>
+              <a href="#none">- 인재상</a>
+              <a href="#none">- 채용공고</a>
+            </div>
+            <div>
+              <h4><a href="#none">POSA소식</a></h4>
+              <h4><a href="#none">보도자료</a></h4>
+              <h4><a href="#none">홍보물</a></h4>
+              <a href="#none">- 홍보인쇄물</a>
+              <a href="#none">- 홍보영상</a>
+            </div>
+            <div>
+              <h4><a href="#none">MOU체결 현황</a></h4>
+              <h4><a href="#none">수상·인증</a></h4>
+              <a href="#none">- 수상</a>
+              <a href="#none">- 인증</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 서브메뉴02 -->
+      <div class="sub-menu" id="menu02">
+        <div class="suvmenu-content">
+          <div>
+            <h3>참여혁신</h3>
+          </div>
+          <div class="menu">
+            <div>
+              <h4><a href="#none">고객만족</a></h4>
+              <a href="#none">- 고객서비스헌장</a>
+              <a href="#none">- 고객서비스 이행표준</a>
+              <a href="#none">- 고객의 소리</a>
+            </div>
+            <div>
+              <h4><a href="#none">열린혁신</a></h4>
+              <a href="#none">- 열린혁신 아이디어</a>
+              <a href="#none">- 경영혁신자료</a>
+            </div>
+            <div>
+              <h4><a href="#none">POSA 신문고</a></h4>
+              <h4><a href="#none">공익신고</a></h4>
+              <h4><a href="#none">부정청구행위 신고센터</a></h4>
+              <h4><a href="#none">청렴포털 부패공익신고</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 서브메뉴03 -->
+      <div class="sub-menu" id="menu03">
+        <div class="suvmenu-content">
+          <div>
+            <h3>사업소개</h3>
+          </div>
+          <div class="menu">
+            <div>
+              <h4><a href="index(suvPage).html">우체국쇼핑</a></h4>
+              <a href="#none">- 우체국쇼핑 소개</a>
+              <a href="#none">- 사업현황</a>
+              <h4><a href="#none">우편고객센터</a></h4>
+              <a href="#none">- 우편고객센터 소개</a>
+              <a href="#none">- 사업현황</a>
+            </div>
+            <div>
+              <h4><a href="#none">우편상품</a></h4>
+              <a href="#none">- 우편상품 소개</a>
+              <a href="#none">- 문화우편상품</a>
+              <a href="#none">- 전자우편</a>
+              <a href="#none">- 생활정보홍보우편</a>
+            </div>
+            <div>
+              <h4><a href="#none">우정문화</a></h4>
+              <a href="#none">- 우정문화 소개</a>
+              <a href="#none">-사업현황</a>
+            </div>
+            <div>
+              <h4><a href="#none">우편연구</a></h4>
+              <a href="#none">- 우편연구 소개</a>
+              <a href="#none">- 사업현황</a>
+              <h4><a href="#none">우정정보화</a></h4>
+              <a href="#none">- 우정정보화 소개</a>
+              <a href="#none">- 사업개요</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 서브메뉴04 -->
+      <div class="sub-menu" id="menu04">
+        <div class="suvmenu-content">
+          <div>
+            <h3>ESG경영</h3>
+          </div>
+          <div class="menu">
+            <div>
+              <h4><a href="#none">ㆍESG경영선언</a></h4>
+              <h4><a href="#none">ㆍESG경영 추진체계</a></h4>
+              <h4><a href="#none">ㆍESG경영 자료실</a></h4>
+              <h4><a href="#none">환경친화경영(E)</a></h4>
+              <a href="#none">- 추진체계</a>
+              <a href="#none">- 추진활동</a>
+              <h4><a href="#none">인권경영(S)</a></h4>
+              <a href="#none">- 인권경영선언문</a>
+              <a href="#none">- 추진활동</a>
+              <a href="#none">- 인권경영 자료실</a>
+              <a href="#none">- 인권침해 신고</a>
+            </div>
+            <div>
+              <h4><a href="#none">사회공헌(S)</a></h4>
+              <a href="#none">- 사회공헌소개</a>
+              <a href="#none">- 사회공헌활동</a>
+              <h4><a href="#none">안전보건경영(S)</a></h4>
+              <a href="#none">- 안전보건경영방침</a>
+              <a href="#none">- 안전보건경영시스템</a>
+              <a href="#none">- 안전보건제안제도</a>
+              <a href="#none">- 추진활동</a>
+              <h4><a href="#none">윤리경영(G)</a></h4>
+              <a href="#none">- 부패방지방침</a>
+              <a href="#none">- 윤리헌장</a>
+              <a href="#none">- 윤리강령</a>
+              <a href="#none">- 행동강령</a>
+              <a href="#none">- 추진활동</a>
+              <a href="#none">- 반부패 청렴 자료</a>
+            </div>
+            <div>
+              <h4><a href="#none">투명경영(G)</a></h4>
+              <a href="#none">- 업무추진비 공개</a>
+              <a href="#none">- 수의계약 현황 공개</a>
+              <a href="#none">- 자체감사 결과 공개</a>
+              <a href="#none">- 외부감사 결과 공개</a>
+              <a href="#none">- 내부규정 공개</a>
+              <a href="#none">- 사규 제·개정 예고</a>
+              <a href="#none">- 청렴도 측정 결과 공개</a>
+              <a href="#none">- 부패방지 시책평가 결과 공개</a>
+              <a href="#none">- 상품권 구매현황</a>
+              <a href="#none">- 청탁금지법 상담내역공개</a>
+              <a href="#none">- 부패 공직자 현황 공개</a>
+              <a href="#none">- 친인척 채용인원 공개</a>
+            </div>
+            <div>
+              <h4><a href="#none">정보공개(G)</a></h4>
+              <a href="#none">- 정보공개제도 안내</a>
+              <a href="#none">- 사전정보공표</a>
+              <a href="#none">- 사전정보 고객의 소리</a>
+              <a href="#none">- 비공개 대상 정보</a>
+              <a href="#none">- 정보목록</a>
+              <a href="#none">- 정보공개청구</a>
+              <a href="#none">- 사업실명제</a>            
+              <h4><a href="#none">경영공시(G)</a></h4>            
+              <h4><a href="#none">공공데이터개방(G)</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 서브메뉴05 -->
+      <div class="sub-menu" id="menu05">
+        <div class="suvmenu-content">
+          <div>
+            <h3>기관소개</h3>
+          </div>
+          <div class="menu">
+            <div>
+              <h4><a href="#none">기관장</a></h4>
+              <a href="#none">- 인사말</a>
+              <a href="#none">- 기관장 동정</a>
+              <a href="#none">- 역대기관장소개</a>
+              <h4><a href="#none">미션 및 비전</a></h4>
+            </div>
+            <div>
+              <h4><a href="#none">조직구성</a></h4>
+              <a href="#none">- 조직구성도</a>
+              <h4><a href="#none">연혁</a></h4>
+            </div>
+            <div>
+              <h4><a href="#none">찾아오시는길</a></h4>
+              <a href="#none">- 본사</a>
+              <a href="#none">- 우표박물관</a>
+              <a href="#none">- 강서우편센터</a>
+              <a href="#none">- 동서울제작센터</a>
+              <a href="#none">- 전자상거래지원센터</a>
+              <a href="#none">- 우정정보화지원실</a>
+              <a href="#none">- 우편연구 소개</a> 
+              <a href="#none">- 부평 우편고객센터</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- main -->
+  <main>
+    <section class="fullMenu">
+      <div class="menu_inner">
+        <div class="menu_title">
+          <h3>전체 메뉴</h3>
+          <div class="menu_Nav">
+            <div class="menu_main">
+              <img src="image/fullMenu/nav_icon_모바일-01.png" alt="알림마당">
+              <h4>알림마당</h4>
+            </div>
+            <div class="menu_main">
+              <img src="image/fullMenu/nav_icon_모바일-02.png" alt="참여혁신">
+              <h4>참여혁신</h4>
+            </div>
+            <div class="menu_main">
+              <img src="image/fullMenu/nav_icon_모바일-03.png" alt="사업소개">
+              <h4>사업소개</h4>
+            </div>
+            <div class="menu_main">
+              <img src="image/fullMenu/nav_icon_모바일-04.png" alt="ESG경영">
+              <h4>ESG경영</h4>
+            </div>
+            <div class="menu_main">
+              <img src="image/fullMenu/nav_icon_모바일-05.png" alt="기관소개">
+              <h4>기관소개</h4>
+            </div>
+          </div>
+        </div>
+        <div class="category-warp">
+          <!-- 서브메뉴01 -->
+          <div class="sub-category" id="category01">
+            <div class="category-content">
+              <div>
+                <h3>알림마당</h3>
+              </div>
+              <div class="category">
+                <div>
+                  <h4><a href="index(notice).html">공지사항</a></h4>
+                  <h4><a href="#none">입찰정보</a></h4>
+                  <h4><a href="#none">인재채용</a></h4>
+                  <a href="#none">- 인재상</a>
+                  <a href="#none">- 채용공고</a>
+                </div>
+                <div>
+                  <h4><a href="#none">POSA소식</a></h4>
+                  <h4><a href="#none">보도자료</a></h4>
+                  <h4><a href="#none">홍보물</a></h4>
+                  <a href="#none">- 홍보인쇄물</a>
+                  <a href="#none">- 홍보영상</a>
+                </div>
+                <div>
+                  <h4><a href="#none">MOU체결 현황</a></h4>
+                  <h4><a href="#none">수상·인증</a></h4>
+                  <a href="#none">- 수상</a>
+                  <a href="#none">- 인증</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 서브메뉴02 -->
+          <div class="sub-category" id="category02">
+            <div class="category-content">
+              <div>
+                <h3>참여혁신</h3>
+              </div>
+              <div class="category">
+                <div>
+                  <h4><a href="#none">고객만족</a></h4>
+                  <a href="#none">- 고객서비스헌장</a>
+                  <a href="#none">- 고객서비스 이행표준</a>
+                  <a href="#none">- 고객의 소리</a>
+                </div>
+                <div>
+                  <h4><a href="#none">열린혁신</a></h4>
+                  <a href="#none">- 열린혁신 아이디어</a>
+                  <a href="#none">- 경영혁신자료</a>
+                </div>
+                <div>
+                  <h4><a href="#none">POSA 신문고</a></h4>
+                  <h4><a href="#none">공익신고</a></h4>
+                  <h4><a href="#none">부정청구행위 신고센터</a></h4>
+                  <h4><a href="#none">청렴포털 부패공익신고</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 서브메뉴03 -->
+          <div class="sub-category" id="category03">
+            <div class="category-content">
+              <div>
+                <h3>사업소개</h3>
+              </div>
+              <div class="category">
+                <div>
+                  <h4><a href="index(suvPage).html">우체국쇼핑</a></h4>
+                  <a href="#none">- 우체국쇼핑 소개</a>
+                  <a href="#none">- 사업현황</a>
+                  <h4><a href="#none">우편고객센터</a></h4>
+                  <a href="#none">- 우편고객센터 소개</a>
+                  <a href="#none">- 사업현황</a>
+                </div>
+                <div>
+                  <h4><a href="#none">우편상품</a></h4>
+                  <a href="#none">- 우편상품 소개</a>
+                  <a href="#none">- 문화우편상품</a>
+                  <a href="#none">- 전자우편</a>
+                  <a href="#none">- 생활정보홍보우편</a>
+                </div>
+                <div>
+                  <h4><a href="#none">우정문화</a></h4>
+                  <a href="#none">- 우정문화 소개</a>
+                  <a href="#none">-사업현황</a>
+                </div>
+                <div>
+                  <h4><a href="#none">우편연구</a></h4>
+                  <a href="#none">- 우편연구 소개</a>
+                  <a href="#none">- 사업현황</a>
+                  <h4><a href="#none">우정정보화</a></h4>
+                  <a href="#none">- 우정정보화 소개</a>
+                  <a href="#none">- 사업개요</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 서브메뉴04 -->
+          <div class="sub-category" id="category04">
+            <div class="category-content">
+              <div>
+                <h3>ESG경영</h3>
+              </div>
+              <div class="category">
+                <div>
+                  <h4><a href="#none">ㆍESG경영선언</a></h4>
+                  <h4><a href="#none">ㆍESG경영 추진체계</a></h4>
+                  <h4><a href="#none">ㆍESG경영 자료실</a></h4>
+                  <h4><a href="#none">환경친화경영(E)</a></h4>
+                  <a href="#none">- 추진체계</a>
+                  <a href="#none">- 추진활동</a>
+                  <h4><a href="#none">인권경영(S)</a></h4>
+                  <a href="#none">- 인권경영선언문</a>
+                  <a href="#none">- 추진활동</a>
+                  <a href="#none">- 인권경영 자료실</a>
+                  <a href="#none">- 인권침해 신고</a>
+                </div>
+                <div>
+                  <h4><a href="#none">사회공헌(S)</a></h4>
+                  <a href="#none">- 사회공헌소개</a>
+                  <a href="#none">- 사회공헌활동</a>
+                  <h4><a href="#none">안전보건경영(S)</a></h4>
+                  <a href="#none">- 안전보건경영방침</a>
+                  <a href="#none">- 안전보건경영시스템</a>
+                  <a href="#none">- 안전보건제안제도</a>
+                  <a href="#none">- 추진활동</a>
+                  <h4><a href="#none">윤리경영(G)</a></h4>
+                  <a href="#none">- 부패방지방침</a>
+                  <a href="#none">- 윤리헌장</a>
+                  <a href="#none">- 윤리강령</a>
+                  <a href="#none">- 행동강령</a>
+                  <a href="#none">- 추진활동</a>
+                  <a href="#none">- 반부패 청렴 자료</a>
+                </div>
+                <div>
+                  <h4><a href="#none">투명경영(G)</a></h4>
+                  <a href="#none">- 업무추진비 공개</a>
+                  <a href="#none">- 수의계약 현황 공개</a>
+                  <a href="#none">- 자체감사 결과 공개</a>
+                  <a href="#none">- 외부감사 결과 공개</a>
+                  <a href="#none">- 내부규정 공개</a>
+                  <a href="#none">- 사규 제·개정 예고</a>
+                  <a href="#none">- 청렴도 측정 결과 공개</a>
+                  <a href="#none">- 부패방지 시책평가 결과 공개</a>
+                  <a href="#none">- 상품권 구매현황</a>
+                  <a href="#none">- 청탁금지법 상담내역공개</a>
+                  <a href="#none">- 부패 공직자 현황 공개</a>
+                  <a href="#none">- 친인척 채용인원 공개</a>
+                </div>
+                <div>
+                  <h4><a href="#none">정보공개(G)</a></h4>
+                  <a href="#none">- 정보공개제도 안내</a>
+                  <a href="#none">- 사전정보공표</a>
+                  <a href="#none">- 사전정보 고객의 소리</a>
+                  <a href="#none">- 비공개 대상 정보</a>
+                  <a href="#none">- 정보목록</a>
+                  <a href="#none">- 정보공개청구</a>
+                  <a href="#none">- 사업실명제</a>            
+                  <h4><a href="#none">경영공시(G)</a></h4>            
+                  <h4><a href="#none">공공데이터개방(G)</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 서브메뉴05 -->
+          <div class="sub-category" id="category05">
+            <div class="category-content">
+              <div>
+                <h3>기관소개</h3>
+              </div>
+              <div class="category">
+                <div>
+                  <h4><a href="#none">기관장</a></h4>
+                  <a href="#none">- 인사말</a>
+                  <a href="#none">- 기관장 동정</a>
+                  <a href="#none">- 역대기관장소개</a>
+                  <h4><a href="#none">미션 및 비전</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#none">조직구성</a></h4>
+                  <a href="#none">- 조직구성도</a>
+                  <h4><a href="#none">연혁</a></h4>
+                </div>
+                <div>
+                  <h4><a href="#none">찾아오시는길</a></h4>
+                  <a href="#none">- 본사</a>
+                  <a href="#none">- 우표박물관</a>
+                  <a href="#none">- 강서우편센터</a>
+                  <a href="#none">- 동서울제작센터</a>
+                  <a href="#none">- 전자상거래지원센터</a>
+                  <a href="#none">- 우정정보화지원실</a>
+                  <a href="#none">- 우편연구 소개</a> 
+                  <a href="#none">- 부평 우편고객센터</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+    <!-- footer -->
+    <footer>
+      <div class="footer_inner">
+        <div class="footer_logo">
+          <img src="image/main/08_footer/footer_logo-01.png" alt="footer_logo">
+        </div>
+        <div class="footer_text">
+          <div class="footer_info">
+            <div class="info_text">
+              <a href="#none">개인정보처리방침</a>
+              <a href="#none">영상정보처리기기운영방침</a>
+              <a href="#none">찾아오시는 길</a>
+              <a href="#none">사이트맵</a>
+            </div>
+          </div>
+          <p>
+            본사:(07245)서울특별시 영등포구 영중로83(영등포가7가) Tel:02-3443-1351@2 FAX:02-34431354<br>
+            Copyrightⓒ2016 Korea Postal Service Agendy All right reserved. 
+          </p>
+        </div>
+        <div class="footer_certificate">
+          <div class="footer_certificate01">
+            <a href="#none"><img src="image/main/08_footer/footer_certification-01.png" alt="인증서"></a>
+          </div>
+          <div class="footer_certificate02">
+            <a href="#none"><img src="image/main/08_footer/footer_certification-02.png" alt="인증서"></a>
+          </div>
+        </div>
+        <div class="footer_site">
+          <select class="family_site" id="family_site">
+            <option value="#none">FAMILY SITE</option>
+            <option value="#none">과학기술정부통신부</option>
+            <option value="#none">우정사업본부</option>
+            <option value="#none">우체국금융개발원</option>
+            <option value="#none">우체국시설관리단</option>
+            <option value="#none">우체국물류지원단</option>
+            <option value="#none">별정우체국연금관리단</option>
+            <option value="#none">우정박물관</option>
+          </select>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  <script src="js/script(fullMenu).js"></script>
+</body>
+</html>
