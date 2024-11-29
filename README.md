@@ -141,7 +141,7 @@
 
 - [와이어프레임 및 디자인](https://www.figma.com/design/pgjrEDeQH0x6ogzVNMS6hA/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%A6%AC%EB%89%B4%EC%96%BC_%EC%A0%84%EC%B1%84%EC%95%84?node-id=121-341&t=K5y2eRG6dNCuzWds-1)
   
-- [DEMO](https://www.posa.or.kr/portal/main/main.do)
+- [DEMO](https://jeon-chaea.github.io/KoreaPostalServiceAgency_Portfolio/)
 
 
 # 📞 Contact
